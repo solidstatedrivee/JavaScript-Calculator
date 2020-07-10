@@ -62,7 +62,7 @@
                 resultNum = divide(parsePrev, parseCurrent);
                 break;
             default:
-                resultNum = currentNum;
+                resultNum = currentNum; //if no operator was last click then the result number is just the current number
         }
         getResult[0].innerHTML = resultNum; //whichever operation was performed on the inputs, set that result to the result container
         currentNum = resultNum; //the result is now the current number
