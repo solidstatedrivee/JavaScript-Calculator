@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;400&display=swap");
+html body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: #55423d;
+}
+html body .title {
+  font-family: "MuseoModerno";
+  color: #fffffe;
+  margin: 0;
+}
+html body .description {
+  font-family: "MuseoModerno";
+  font-weight: 200;
+  color: #fff3ec;
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 1.16em;
+}
+html body .calculator-container {
+  width: 400px;
+  height: 640px;
+  border: 2px solid #271c19;
+  border-radius: 25px;
+  background: linear-gradient(to bottom right, #e78fb3, #9656a1);
+  padding: 10px;
+}
+html body .calculator-container .calculator-grid {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+html body .calculator-container .calculator-grid .calculator-button {
+  text-align: center;
+  height: 100%;
+  font-family: "MuseoModerno";
+  color: #271c19;
+  font-size: 2em;
+  border-radius: 25px;
+  transition: all 250ms ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body .calculator-container .calculator-grid .calculator-button:hover {
+  background: #ffc0ad;
+  cursor: pointer;
+}
+html body .calculator-container .calculator-grid .calculator-button:active {
+  background: #e78fb3;
+}
+html body .calculator-container .calculator-grid .operator {
+  color: #e78fb3;
+}
+html body .calculator-container .calculator-grid .operator:hover {
+  background: #140d0b;
+}
+html body .calculator-container .calculator-grid .operator:active {
+  background: #271c19;
+}
+html body .calculator-container .calculator-grid .utility {
+  color: #fff3ec;
+}
+html body .calculator-container .calculator-grid .utility:hover {
+  background: #140d0b;
+}
+html body .calculator-container .calculator-grid .utility:active {
+  background: #271c19;
+}
+html body .calculator-container .calculator-grid .zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+html body .calculator-container .calculator-grid .decimal {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+html body .calculator-container .calculator-grid .equals {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+html body .calculator-container .calculator-grid .one {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+html body .calculator-container .calculator-grid .two {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+html body .calculator-container .calculator-grid .three {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+html body .calculator-container .calculator-grid .plus {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+html body .calculator-container .calculator-grid .four {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+html body .calculator-container .calculator-grid .five {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+html body .calculator-container .calculator-grid .six {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+html body .calculator-container .calculator-grid .minus {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+html body .calculator-container .calculator-grid .seven {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+html body .calculator-container .calculator-grid .eight {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+html body .calculator-container .calculator-grid .nine {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+html body .calculator-container .calculator-grid .times {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+html body .calculator-container .calculator-grid .clear {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+html body .calculator-container .calculator-grid .negpos {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+html body .calculator-container .calculator-grid .percent {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+html body .calculator-container .calculator-grid .divide {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+html body .calculator-container .calculator-grid .result {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  color: #fffffe;
+  font-size: 4em;
+}
+html body .calculator-container .calculator-grid .result:hover {
+  background: none;
+  cursor: default;
+}
+
+/*# sourceMappingURL=styles.css.map */
